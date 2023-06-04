@@ -2,7 +2,7 @@
 
 Various random shaders I wrote for fun.  
 
-Use shadertoy.com or the shadertoy VSC plug-in to check them out!
+Use shadertoy VSC plug-in to check them out!
 
 Also use the frame render script to render a specific frame.  
 
