@@ -1,3 +1,8 @@
+#version 330
+uniform float iTime;
+uniform vec2 iResolution;
+out vec4 fragColor;
+
 vec3 palette(float t) {
     vec3 a = vec3(0.0, 0.2, 0.7);
     vec3 b = vec3(0.2, 0.3, 0.0);
@@ -6,8 +11,8 @@ vec3 palette(float t) {
     return a + b * sin(6.33 * (c * t + d));
 }
 
-void mainImage(out vec4 fragColor, in vec2 fragCoord) {
-    vec2 uv = (fragCoord * 2.0 - iResolution.xy) / iResolution.y;
+void main(){
+    vec2 uv = (gl_FragCoord.xy * 2.0 - iResolution) / min(iResolution.y, iResolution.x);
     vec2 uv0 = uv;
     vec3 finalColor = vec3(0.0);
 
