@@ -1,6 +1,8 @@
 # Shaders
 
-Various random shaders I wrote for fun.  
+Various random shaders I wrote for fun. 
+ 
+![Snowflake](render_files/render.png)
 
 Use shadertoy.com or the VSC plug-in to check them out!
 
