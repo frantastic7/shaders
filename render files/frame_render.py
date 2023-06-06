@@ -9,7 +9,7 @@ TIME  = float(sys.argv[2])
 RESOLUTION_X = int(sys.argv[3])
 RESOLUTION_Y = int(sys.argv[4])
 
-output_name = shader_file + "_"+str(TIME)+".png"
+output_name = shader_file[:-5] + "_"+str(TIME)+".png"
 
 # vertex shader in glsl
 vertex_shader = """
