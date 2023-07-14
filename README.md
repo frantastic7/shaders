@@ -17,4 +17,6 @@ Usage :
 python3 frame_render.py "shader_file.glsl" iTime_value horizontal_resolution vertical_resolution  
 
 iTime values are seconds (floats)  
-resolutions are ints.
+resolutions are ints.  
+
+openGL continues render script coming on Monday.
